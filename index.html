@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบเก็บสะสมแสตมป์</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎫 ระบบเก็บสะสมแสตมป์</h1>
+            <p>จัดการและเก็บรวบรวมแสตมป์ของคุณ</p>
+        </div>
+
+        <!-- Authentication Section -->
+        <div id="authSection" class="auth-section">
+            <div class="login-form">
+                <h2>🔐 เข้าสู่ระบบ</h2>
+                <div class="form-group">
+                    <label>Username / Phone Number:</label>
+                    <input type="text" id="username" placeholder="กรอก username หรือเบอร์โทรศัพท์">
+                </div>
+                <div class="form-group">
+                    <label>Password:</label>
+                    <input type="password" id="password" placeholder="กรอกรหัสผ่าน">
+                </div>
+                <button class="btn" onclick="login()">เข้าสู่ระบบ</button>
+                <div style="margin-top: 20px; font-size: 14px; color: #666;">
+                    <p><strong>ตัวอย่างการเข้าสู่ระบบ:</strong></p>
+                    <p>Admin: admin / admin123</p>
+                    <p>ลูกค้า: 0812345678 / customer123</p>
+                    <p>Shop: shop001 / shop123</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pages will be loaded here -->
+        <div id="pageContainer"></div>
+    </div>
+
+    <!-- Modals -->
+    <div id="modalContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
